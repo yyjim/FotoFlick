@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Phlickr @Y!Hack'13",
+  "version": "0.1",
+  "description": "Phlickr helps to upload images you love to ",
+  "permissions": [
+    "tabs", "https://pic-collage.com/*", "http://pic-collage.com/*"
+  ],
+  "icons": {
+    "48" : "sample-48.png",
+    "128" : "sample-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js" : ["js/jquery-2.0.3.min.js", "js/jquery.transit.js", "js/phlickr.js", "js/contentscript.js"]
+    }
+  ]
+}
