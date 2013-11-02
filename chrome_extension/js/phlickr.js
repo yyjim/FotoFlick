@@ -26,10 +26,12 @@ function spinAnimation(obj) {
     var overSize = new CGSize(40, 40);
     var scale = jQuery.calculateScale(size, overSize);
     console.log('scale:' + scale);
+    var left = screen.width-40+'px';
+    var top = '-'+(screen.height+40)+'px';
     element.transition({
         rotate: '180deg',
-        left: '200px',
-        top: '-200px',
+        left: left,
+        top: top,
         scale: 1 / scale,
         opacity: 0
     }, 200, 'linear', function () {
