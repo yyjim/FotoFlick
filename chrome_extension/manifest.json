@@ -28,7 +28,7 @@
     {
       // Load related libs when page loaded and lets see if they worked
       "matches": ["http://*/*"],
-      "js" : ["js/jquery-1.9.1.js", "js/jquery.transit.js", "js/jquery-ui-1.10.3.custom.min.js", "js/fotoflick.js"],
+      "js" : ["js/parse.js", "js/jquery-1.9.1.js", "js/jquery.transit.js", "js/jquery-ui-1.10.3.custom.min.js", "js/fotoflick.js"],
       "css" : ["css/fotoflick_inject.css"]
     }
   ]
