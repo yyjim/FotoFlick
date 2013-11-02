@@ -1,10 +1,3 @@
-
-/*
-* Copyright (c) 2011 The Chromium Authors. All rights reserved.
-* Use of this source code is governed by a BSD-style license that can be
-* found in the LICENSE file.
-*/
-
 /**
  * Performs an XMLHttpRequest to Twitter's API to get trending topics.
  *
@@ -57,9 +50,15 @@ function onText(jsonMsg) {
 
 function fetchImage () {
   var imgs = document.getElementsByTagName('img');
-  console.log(imgs);
+  for (var i in imgs) {
+    var img = imgs[i];
+    if (img.width && img.height) {
+        if (img.width > 100 && img.height) {
+            console.log(img.src);
+        }
+    }
+  }
 }
 
-//fetchTwitterFeed(onText);
 fetchImage();
 

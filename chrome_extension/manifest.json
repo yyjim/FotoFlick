@@ -2,13 +2,18 @@
   "manifest_version": 2,
   "name": "Phlickr @Y!Hack'13",
   "version": "0.1",
-  "description": "Phlickr helps to upload images you love to ",
+  "description": "Phlickr helps to upload images you love",
+  "icons": {
+    "48" : "images/sample-48.png",
+    "128" : "images/sample-128.png"
+  },
   "permissions": [
     "tabs", "https://pic-collage.com/*", "http://pic-collage.com/*"
   ],
-  "icons": {
-    "48" : "sample-48.png",
-    "128" : "sample-128.png"
+  "web_accessible_resources": [
+    "js/*",
+    "images/*"
+  ],
   },
   "content_scripts": [
     {
