@@ -1,3 +1,5 @@
+Parse.initialize("G1LnFzyc3IopA4RbTZ2viOsGU7oVnVjwfoEHKjSi", "Pwe0rEe7JI3wlOJeb2mYts3KAm5FE0QLqgNkLDca");
+
 var lastTime;
 var touch;
 var PAN_VELOCITY = 1500;
@@ -98,5 +100,13 @@ function upload(image_url) {
     success: function (data) {
       console.log(data);
     }    
+  });
+    
+  var PFImageObject = Parse.Object.extend("Image");
+  var imageObject = new PFImageObject();
+  imageObject.save({imageURLString: image_url}, {
+    success: function(object) {
+//      alert("yay! save" + image_url);
+    }
   });
 }
