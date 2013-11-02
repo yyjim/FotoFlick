@@ -12,6 +12,7 @@
   ],
   "web_accessible_resources": [
     "js/*",
+    "css/*",
     "images/*"
   ],
   "browser_action": {
