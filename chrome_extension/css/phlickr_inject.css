@@ -1,19 +1,24 @@
 .phlickr_container {
-  position: relative;
-  width: 80%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 500px;
   overflow: auto;
   white-space:nowrap;
+  z-index: 3000;
 }
 
 .phlickr_container .phlickr_draggable {
   position: absolute;
   bottom:0;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .phlickr_container .phlickr_draggable_element {
   display:inline-block;
   padding:10px;
+  opacity: 1;
 }
 
 #phlickr_photo_queue {
