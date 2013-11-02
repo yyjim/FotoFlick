@@ -100,37 +100,3 @@ function upload(image_url) {
     }    
   });
 }
-
-// $(function () {
-//     $("img").draggable({
-//         start: function (event, ui) {
-//             console.debug(event);
-//             console.debug('start:' + ui.offset.left);
-//             lastOffset = ui.offset;
-//             lastTime = new Date().getTime() / 1000;
-//             touch = new UITouch();
-//         },
-//         stop: function (event, ui) {
-//             console.debug(event);
-//             console.debug('end:' + ui.offset.left);
-
-//             var currentTime = new Date().getTime() / 1000;
-//             var timeInterval = currentTime - lastTime;
-//             var v2 = velocity(touch.prev, touch.current, timeInterval);
-//             if (v2 > PAN_VELOCITY) {
-//                 spinAnimation(event.target);
-//             } else {
-//                 $(event.target).css({top : '', left: ''});
-//             }
-//             console.debug('velocity2 is:' + v2);
-//             console.debug('time interval is:' + timeInterval);
-//         },
-//         drag: function (event, ui) {
-//             console.debug('move to:' + ui.offset.left);
-//             console.debug('lastOffset:' + lastOffset.left);
-//             touch.prev = touch.current;
-//             touch.current = ui.offset;
-//             lastTime = new Date().getTime() / 1000;
-//         }
-//     });
-// });

@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
-  "name": "Phlickr @Y!Hack'13",
+  "manifest_version": 3,
+  "name": "Fotoflick @Y!Hack'13",
   "version": "0.2",
-  "description": "Phlickr helps to upload images you love",
+  "description": "Fotoflick helps to upload images you love",
   "icons": {
     "48" : "images/sample-48.png",
     "128" : "images/sample-128.png"
   },
   "permissions": [
     "activeTab",
-    "http://phlickr.herokuapp.com/"
+    "http://fotoflick.herokuapp.com/"
   ],
   "web_accessible_resources": [
     "js/*",
@@ -17,7 +17,7 @@
     "images/*"
   ],
   "browser_action": {
-    "default_title": "Phlickr",
+    "default_title": "Fotoflick",
     "default_icon": "images/sample-48.png"
   },
   "background": {
@@ -28,8 +28,8 @@
     {
       // Load related libs when page loaded and lets see if they worked
       "matches": ["http://*/*"],
-      "js" : ["js/jquery-1.9.1.js", "js/jquery.transit.js", "js/jquery-ui-1.10.3.custom.min.js", "js/phlickr.js"],
-      "css" : ["css/phlickr_inject.css"]
+      "js" : ["js/jquery-1.9.1.js", "js/jquery.transit.js", "js/jquery-ui-1.10.3.custom.min.js", "js/fotoflick.js"],
+      "css" : ["css/fotoflick_inject.css"]
     }
   ]
 }
