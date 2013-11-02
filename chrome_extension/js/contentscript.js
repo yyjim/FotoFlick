@@ -41,7 +41,7 @@ function iWantPhlickr() {
   $.each(targetImgs, function( index, img ) {
     var phlickr_draggable_element = $('<div></div>').addClass('phlickr_draggable_element');
     var new_imag_dom = generateNewImageDom(img);
-    phlickr_draggable_element.append($(new_imag_dom));
+    phlickr_draggable_element.append($(new_imag_dom).addClass('phlickr_image'));
     phlickr_draggable.append(phlickr_draggable_element);
   });
 
