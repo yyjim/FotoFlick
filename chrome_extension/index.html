@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Thumbnail scroller jQuery plugin</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.transit.js"></script> 
+  <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="js/phlickr.js"></script>
+  <style>
+  </style>
+  <script type="text/javascript">
+    function setup_slider() {
+      var numberOfElements = $('ul.gallery li').size();
+      $('#slider').slider({ 
+              min: 0,
+              max: numberOfElements,
+              change: function( event, ui ) {
+              }
+      });
+    }
+        
+    $(function(){
+        $(".content").mCustomScrollbar({
+          horizontalScroll:true
+        });      
+    })
+    
+    $(function() {
+      setup_slider();
+    });
+  </script>
+  
+  <style>
+    ul.gallery {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    .gallery li {
+      position: relative;
+      display:inline;
+      margin: 0;
+      padding: 10px;
+    }
+    
+    #container {
+      position: relative;
+      width: 80%;
+      height: 500px;
+      overflow: auto;
+      white-space:nowrap;
+    }
+
+    #container .images {
+      position: absolute;
+      bottom:0;
+    }
+    
+    #container .contentImg {
+      display:inline-block;
+      padding:10px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div style="margin-top:160px;">
+    <div id="photo_queue" style="display:none">
+    </div>
+    <div id="container">
+      <div class="images">
+        <div class='contentImg'><img src="thumbs/img1.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img2.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img3.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img4.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img5.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img6.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img7.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img8.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img9.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img10.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img1.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img2.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img3.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img4.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img5.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img6.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img7.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img8.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img9.jpg" /></div>
+        <div class='contentImg'><img src="thumbs/img10.jpg" /></div>
+      </div>
+    </div>    
+  </div>
+</body>
+</html>
