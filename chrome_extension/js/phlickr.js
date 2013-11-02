@@ -50,7 +50,10 @@ function velocity(offset1, offset2, t) {
 }
 
 function moveToQueue(obj) {
-    $(obj).appendTo($('#photo_queue'));
+    $(obj).appendTo($('#phlickr_photo_queue'));
+    upload($(obj).find('img').attr('src'));
+}
+
 function reload_draggable() {
   $(".phlickr_draggable_element").draggable({
       start: function (event, ui) {
@@ -84,6 +87,16 @@ function reload_draggable() {
       }
   });
 }
+
+function upload(image_url) {
+  $.ajax({
+    type: 'POST',
+    url : "http://phlickr.herokuapp.com/upload",
+    data: { 'image_url': image_url},
+    success: function (data) {
+      console.log(data);
+    }    
+  });
 }
 
 // $(function () {

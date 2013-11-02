@@ -8,7 +8,8 @@
     "128" : "images/sample-128.png"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "http://phlickr.herokuapp.com/"
   ],
   "web_accessible_resources": [
     "js/*",
