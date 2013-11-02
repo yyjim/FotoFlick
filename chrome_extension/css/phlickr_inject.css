@@ -1,0 +1,17 @@
+.phlickr_container {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  overflow: auto;
+  white-space:nowrap;
+}
+
+.phlickr_container .phlickr_draggable {
+  position: absolute;
+  bottom:0;
+}
+
+.phlickr_container .phlickr_draggable_element {
+  display:inline-block;
+  padding:10px;
+}

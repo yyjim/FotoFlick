@@ -27,7 +27,8 @@
     {
       // Load related libs when page loaded and lets see if they worked
       "matches": ["http://*/*"],
-      "js" : ["js/jquery-1.9.1.js", "js/jquery.transit.js", "js/jquery-ui-1.10.3.custom.min.js", "js/phlickr.js"]
+      "js" : ["js/jquery-1.9.1.js", "js/jquery.transit.js", "js/jquery-ui-1.10.3.custom.min.js", "js/phlickr.js"],
+      "css" : ["css/phlickr_inject.css"]
     }
   ]
 }
