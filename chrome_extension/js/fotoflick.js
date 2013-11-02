@@ -93,7 +93,7 @@ function reload_draggable() {
 function upload(image_url) {
   $.ajax({
     type: 'POST',
-    url : "http://phlickr.herokuapp.com/upload",
+    url : "http://fotoflick.herokuapp.com/upload",
     data: { 'image_url': image_url},
     success: function (data) {
       console.log(data);
