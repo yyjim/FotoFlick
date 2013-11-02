@@ -39,6 +39,8 @@ function iWantPhlickr() {
   
   console.log(phlickr_draggable);
   $('body').prepend(phlickr_container);
+  
+  $('body').append($('<div></div>').attr('id', 'phlickr_photo_queue'));
   // var interact_dom = document.createElement('div');
   // interact_dom.setAttribute('class', 'style_interact_board');
   // for (var i in targetImgs) {
@@ -50,4 +52,5 @@ function iWantPhlickr() {
 }
 
 iWantPhlickr();
+reload_draggable();
 

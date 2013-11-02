@@ -15,3 +15,7 @@
   display:inline-block;
   padding:10px;
 }
+
+#phlickr_photo_queue {
+  display: none;
+}
