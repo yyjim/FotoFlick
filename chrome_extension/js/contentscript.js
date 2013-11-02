@@ -1,14 +1,19 @@
-function fetchImage() {
-  var imgs = document.getElementsByTagName('img');
+function collectImages(data) {
   var targetImgs = new Array();
-  for (var i in imgs) {
-    var img = imgs[i];
+  for (var i in data) {
+    var img = data[i];
     if (img.width && img.height) {
         if (img.width > 100 && img.height > 100) {
             targetImgs.push(img);
         }
     }
   }
+  return targetImgs;
+}
+
+function iWantPhlickr() {
+  var imgs = document.getElementsByTagName('img');
+  var targetImgs = collectImages(imgs);
 
   var interact_dom = document.createElement('div');
   interact_dom.setAttribute('class', 'style_interact_board');
@@ -26,5 +31,5 @@ function fetchImage() {
   document.body.insertBefore(interact_dom, document.body.firstChild);
 }
 
-fetchImage();
+iWantPhlickr();
 
