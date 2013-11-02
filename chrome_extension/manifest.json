@@ -3,7 +3,6 @@
   "name": "Fotoflick @Y!Hack'13",
   "version": "0.3",
   "description": "Fotoflick helps to upload images you love",
-  "options_page": "option.html",
   "icons": {
     "48" : "images/logo-fotoflick-48.png",
     "128" : "images/logo-fotoflick-128.png"
