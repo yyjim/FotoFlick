@@ -47,16 +47,6 @@ function iWantPhlickr() {
 
   var phlickr = getPhlickr();  
   phlickr.append(phlickr_draggable);
-//  $('body').prepend(phlickr_container);  
-    
-  // var interact_dom = document.createElement('div');
-  // interact_dom.setAttribute('class', 'style_interact_board');
-  // for (var i in targetImgs) {
-  //   var img = targetImgs[i];
-  //   var new_img_dom = generateNewImageDom(img);
-  //   interact_dom.appendChild(new_img_dom);
-  // }
-  //  document.body.insertBefore(interact_dom, document.body.firstChild);
 }
 
 if (phlickr) {
