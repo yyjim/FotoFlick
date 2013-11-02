@@ -8,7 +8,7 @@
     "128" : "images/sample-128.png"
   },
   "permissions": [
-    "activeTab", "tabs", "https://*/*", "http://*/*"
+    "activeTab"
   ],
   "web_accessible_resources": [
     "js/*",
