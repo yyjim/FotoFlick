@@ -1,15 +1,18 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Fotoflick @Y!Hack'13",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Fotoflick helps to upload images you love",
+  "options_page": "option.html",
   "icons": {
     "48" : "images/logo-fotoflick-48.png",
     "128" : "images/logo-fotoflick-128.png"
   },
   "permissions": [
     "activeTab",
-    "http://fotoflick.herokuapp.com/"
+    "tabs",
+    "http://fotoflick.herokuapp.com/",
+    "http://*/"
   ],
   "web_accessible_resources": [
     "js/*",
