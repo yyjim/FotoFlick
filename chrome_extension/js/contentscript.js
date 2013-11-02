@@ -13,11 +13,11 @@ function collectImages(data) {
 
 function generateNewImageDom(img) {
   var new_img_dom = document.createElement('img');
-  if (img.width > img.height) {
-      new_img_dom.setAttribute('width', '300');
-    } else {
-      new_img_dom.setAttribute('height', '300');
-    }
+    // if (img.width > img.height) {
+    //   new_img_dom.setAttribute('width', '300');
+    // } else {
+    //   new_img_dom.setAttribute('height', '300');
+    // }
     new_img_dom.setAttribute('src', img.src);
     return new_img_dom;
 }

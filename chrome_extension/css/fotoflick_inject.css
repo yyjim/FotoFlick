@@ -12,13 +12,17 @@
 .phlickr_container .phlickr_draggable {
   position: absolute;
   bottom:0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .8);
 }
 
 .phlickr_container .phlickr_draggable_element {
   display:inline-block;
   padding:10px;
   opacity: 1;
+}
+
+.phlickr_image {
+  height: 150px;
 }
 
 #phlickr_photo_queue {
