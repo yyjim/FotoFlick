@@ -3,7 +3,7 @@ function collectImages(data) {
   for (var i in data) {
     var img = data[i];
     if (img.width && img.height) {
-        if (img.width > 100 && img.height > 100) {
+        if (img.width > 0 && img.height > 0) {
             targetImgs.push(img);
         }
     }
@@ -26,14 +26,27 @@ function iWantPhlickr() {
   var imgs = document.getElementsByTagName('img');
   var targetImgs = collectImages(imgs);
 
-  var interact_dom = document.createElement('div');
-  interact_dom.setAttribute('class', 'style_interact_board');
-  for (var i in targetImgs) {
-    var img = targetImgs[i];
-    var new_img_dom = generateNewImageDom(img);
-    interact_dom.appendChild(new_img_dom);
-  }
-  document.body.insertBefore(interact_dom, document.body.firstChild);
+  var phlickr_draggable = $('<div></div>').addClass('phlickr_draggable');
+  $.each(targetImgs, function( index, img ) {
+    var phlickr_draggable_element = $('<div></div>').addClass('phlickr_draggable_element');
+    var new_imag_dom = generateNewImageDom(img);
+    phlickr_draggable_element.append($(new_imag_dom));
+    phlickr_draggable.append(phlickr_draggable_element);
+  });
+  
+  var phlickr_container = $('<div></div>').addClass('phlickr_container');
+  phlickr_container.append(phlickr_draggable);
+  
+  console.log(phlickr_draggable);
+  $('body').prepend(phlickr_container);
+  // var interact_dom = document.createElement('div');
+  // interact_dom.setAttribute('class', 'style_interact_board');
+  // for (var i in targetImgs) {
+  //   var img = targetImgs[i];
+  //   var new_img_dom = generateNewImageDom(img);
+  //   interact_dom.appendChild(new_img_dom);
+  // }
+  //  document.body.insertBefore(interact_dom, document.body.firstChild);
 }
 
 iWantPhlickr();
