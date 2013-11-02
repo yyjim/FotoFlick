@@ -4,6 +4,8 @@ function updateAvailableImgCount() {
 
     for (var i in imgs) {
         var img = imgs[i];
+        if ($(img).hasClass('phlickr_draggable')) continue;
+
         if (img.width && img.height) {
             if (img.width > 150 || img.height > 150) {
                 img_count++;
