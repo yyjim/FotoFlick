@@ -4,7 +4,7 @@ function fetchImage() {
   for (var i in imgs) {
     var img = imgs[i];
     if (img.width && img.height) {
-        if (img.width > 100 && img.height) {
+        if (img.width > 100 && img.height > 100) {
             targetImgs.push(img);
         }
     }
