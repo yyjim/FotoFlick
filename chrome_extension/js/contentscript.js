@@ -3,7 +3,7 @@ function collectImages(data) {
   for (var i in data) {
     var img = data[i];
     if (img.clientWidth && img.clientHeight) {
-        if (img.clientWidth > 150 || img.clientHeight > 150) {
+        if (img.clientWidth > 75 || img.clientHeight > 75) {
             targetImgs.push(img);
         }
     }
